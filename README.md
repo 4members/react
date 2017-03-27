@@ -30,6 +30,7 @@ select nodes by tag name ("p" and "body", respectively) using select("type tag n
 A common pattern is to break the initial selection into three parts: the updating nodes to modify, the entering nodes to add, and the exiting nodes to remove.
 
 // Update…
+``js
 var p = d3.select("body")
   .selectAll("p")
   .data([4, 8, 15, 16, 23, 42])
@@ -41,3 +42,4 @@ p.enter().append("p")
 
 // Exit…
 p.exit().remove();
+```
