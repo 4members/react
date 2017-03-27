@@ -3,7 +3,9 @@
 #### D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.
 
 #### You need to install D3 to use it by :
- ```js npm install d3 --save
+ ```js
+ npm install d3 --save
+ 
   ```
 
 D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document.
@@ -30,7 +32,7 @@ select nodes by tag name ("p" and "body", respectively) using select("type tag n
 A common pattern is to break the initial selection into three parts: the updating nodes to modify, the entering nodes to add, and the exiting nodes to remove.
 
 // Update…
-``js
+```js
 var p = d3.select("body")
   .selectAll("p")
   .data([4, 8, 15, 16, 23, 42])
