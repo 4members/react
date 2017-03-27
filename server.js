@@ -1,4 +1,5 @@
 var hapi = require('hapi')
+var d3 = require('d3')
 var routes = require('./routes.js')
 var server = new hapi.Server();
 server.connection({
@@ -9,6 +10,7 @@ server.register([require('inert'), require('vision')], (err) => {
   if(err){
     throw err;
   }
+
 })
 
 server.views({
