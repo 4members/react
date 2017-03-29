@@ -12,5 +12,12 @@ module.exports = [
  handler: function (request, reply) {
    reply.file('./scripts/home.js')
  }
+},
+{
+  method: 'GET',
+ path: '/sw.js',
+ handler: function (request, reply) {
+   reply.file('./sw.js')
+ }
 }
   ]
